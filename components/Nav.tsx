@@ -10,6 +10,9 @@ export default function Nav() {
           <Link className="pill" href="/daily">Daily</Link>{" "}
           <Link className="pill" href="/meetings">Meetings</Link>{" "}
           <Link className="pill" href="/families">Families</Link>
+          <Link className="pill" href="/resources">Resources</Link>{" "}
+          <Link className="pill" href="/facilities">Facilities</Link>{" "}
+          <Link className="pill" href="/fundraising">Fundraising</Link>{" "}
         </div>
       </div>
     </div>
