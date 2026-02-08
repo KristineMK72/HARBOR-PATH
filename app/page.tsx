@@ -1,5 +1,5 @@
-import Container from "@/components/Container";
-import Card from "@/components/Card";
+import Container from "../components/Container";
+import Card from "../components/Card";
 import Link from "next/link";
 
 export default function HomePage() {
