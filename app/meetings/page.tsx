@@ -1,10 +1,12 @@
-import Container from "@/components/Container";
+import Container from "../../components/Container";
 
 export default function Meetings() {
   return (
     <Container>
       <h1>Crow Wing County meetings</h1>
-      <p>Meeting list coming next.</p>
+      <p className="muted">
+        Meeting list coming next.
+      </p>
     </Container>
   );
 }
