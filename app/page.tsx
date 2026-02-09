@@ -1,14 +1,23 @@
 import Container from "../components/Container";
 import Card from "../components/Card";
 import Link from "next/link";
+import { DAILY_DEVOTIONS } from "../lib/dailyDevotions";
 
-function todayLabel() {
-  const d = new Date();
-  return d.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+function todayIndex() {
+  const today = new Date();
+  const start = new Date(today.getFullYear(), 0, 1);
+  const diff = today.getTime() - start.getTime();
+  const day = Math.floor(diff / (1000 * 60 * 60 * 24));
+  return day % DAILY_DEVOTIONS.length;
 }
 
 export default function HomePage() {
-  const today = todayLabel();
+  const devotion = DAILY_DEVOTIONS[todayIndex()];
+  const todayLabel = new Date().toLocaleDateString(undefined, {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+  });
 
   return (
     <Container>
@@ -19,37 +28,15 @@ export default function HomePage() {
       </p>
 
       <div className="grid">
-        <Card title="Today’s devotions">
-          <p className="muted">{today}</p>
-
-          <p style={{ marginTop: 10 }}>
-            <a
-              href="https://www.aa.org/daily-reflections"
-              target="_blank"
-              rel="noreferrer"
-            >
-              AA Daily Reflections (today) →
-            </a>
-          </p>
-
-          <p style={{ marginTop: 8 }}>
-            <a
-              href="https://www.hazeldenbettyford.org/thought-for-the-day"
-              target="_blank"
-              rel="noreferrer"
-            >
-              24 Hours a Day / Thought for the Day →
-            </a>
-          </p>
-
-          <p className="muted small" style={{ marginTop: 10 }}>
-            Harbor Path note: take the next right step—just for today.
-          </p>
+        <Card title="Just for today">
+          <p className="muted small">{todayLabel}</p>
+          <h3 style={{ marginTop: 6 }}>{devotion.title}</h3>
+          <p className="muted">{devotion.body}</p>
         </Card>
 
         <Card title="Big Book">
           <p className="muted">Read or listen from official A.A. sources.</p>
-          <Link href="/big-book">Open Big Book links →</Link>
+          <Link href="/big-book">Open Big Book →</Link>
         </Card>
 
         <Card title="I need help now">
