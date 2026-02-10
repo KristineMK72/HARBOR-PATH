@@ -199,4 +199,44 @@ a:hover {
     text-decoration: none;
     filter: brightness(1.06);
   }
+
+
+/* Harbor Path map */
+.hpMapWrap {
+  margin-top: 12px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.hpMap {
+  width: 100%;
+  height: 420px;
+}
+
+@media (max-width: 768px) {
+  .hpMap {
+    height: 360px;
+  }
+}
+
+.hpSelect {
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(17, 26, 46, 0.45);
+  color: var(--text);
+}
+
+.hpCheck {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  user-select: none;
+}
+
+.hp-pin-inner {
+  font-size: 22px;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,.35));
+  }
 }
