@@ -5,7 +5,32 @@ import Nav from "../components/Nav";
 export const metadata = {
   title: "Harbor Path",
   description:
-    "A calm, supportive place for people struggling, people in recovery, and families who love them.",
+    "A calm, supportive place for people struggling with addiction, people in recovery, and families who love them.",
+
+  openGraph: {
+    title: "Harbor Path",
+    description:
+      "Education, resources, and hope for people affected by alcoholism and addiction.",
+    url: "https://harbor-path.vercel.app",
+    siteName: "Harbor Path",
+    images: [
+      {
+        url: "/9446A848-04AF-4706-B38A-A85333CCCB88.png",
+        width: 1024,
+        height: 1024,
+        alt: "Safe Harbor — a calm anchor for recovery",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Harbor Path",
+    description:
+      "Education, resources, and hope for people affected by alcoholism and addiction.",
+    images: ["/9446A848-04AF-4706-B38A-A85333CCCB88.png"],
+  },
 };
 
 export default function RootLayout({
@@ -17,6 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Nav />
+
         {children}
 
         <footer className="footer">
