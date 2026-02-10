@@ -20,6 +20,7 @@ export default function Nav() {
           <Link className="pill" href="/daily">Daily</Link>
           <Link className="pill" href="/meetings">Meetings</Link>
           <Link className="pill" href="/families">Families</Link>
+          <Link className="pill" href="/addiction-101">Addiction 101</Link>
           <Link className="pill" href="/resources">Resources</Link>
           <Link className="pill" href="/fundraising">Treatment Fund</Link>
         </div>
@@ -42,6 +43,9 @@ export default function Nav() {
           <Link href="/daily" onClick={() => setOpen(false)}>Daily</Link>
           <Link href="/meetings" onClick={() => setOpen(false)}>Meetings</Link>
           <Link href="/families" onClick={() => setOpen(false)}>Families</Link>
+          <Link href="/addiction-101" onClick={() => setOpen(false)}>
+            Addiction 101
+          </Link>
           <Link href="/resources" onClick={() => setOpen(false)}>Resources</Link>
           <Link href="/fundraising" onClick={() => setOpen(false)}>
             Treatment Fund
