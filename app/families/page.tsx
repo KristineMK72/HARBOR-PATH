@@ -213,12 +213,48 @@ export default function Families() {
         </ul>
       </div>
 
-      <p className="muted small" style={{ marginTop: 16 }}>
-        Want this page to include specific Crow Wing County phone numbers,
-        clinics, detox locations, and family support groups? Tell me what towns
-        you want included (Brainerd, Baxter, Crosby, Pequot Lakes, Pine River,
-        etc.) and I’ll format it cleanly for Harbor Path.
-      </p>
+<div className="card cardWide" style={{ marginTop: 14 }}>
+  <h2 style={{ marginTop: 0 }}>Local help in Crow Wing County</h2>
+  <p className="muted">
+    If you’re in the Brainerd Lakes area, you are not alone. Local support can
+    include family support meetings, county services, counseling, crisis support,
+    and treatment navigation.
+  </p>
+
+  <ul>
+    <li>
+      <strong>Meetings:</strong> Use the map and “today” filter on the{" "}
+      <Link href="/meetings">Meetings page →</Link>
+    </li>
+    <li>
+      <strong>Immediate crisis:</strong> If there is danger right now, call{" "}
+      <strong>911</strong>. For mental health crisis support, call or text{" "}
+      <strong>988</strong>.
+    </li>
+    <li>
+      <strong>Find treatment:</strong>{" "}
+      <a href="https://fasttrackermn.org/" target="_blank" rel="noreferrer">
+        Fast-Tracker MN →
+      </a>
+    </li>
+    <li>
+      <strong>State help page:</strong>{" "}
+      <a
+        href="https://mn.gov/dhs/people-we-serve/adults/health-care/alcohol-drugs-addictions/get-help/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        MN DHS: Get help →
+      </a>
+    </li>
+  </ul>
+
+  <p className="muted small" style={{ marginTop: 10 }}>
+    Harbor Path will keep expanding local resources (family supports, detox/treatment
+    options, and financial help) so you can find what you need quickly — without
+    searching in a crisis.
+  </p>
+</div>
     </Container>
   );
 }
