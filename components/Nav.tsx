@@ -21,7 +21,7 @@ export default function Nav() {
           <Link className="pill" href="/meetings">Meetings</Link>
           <Link className="pill" href="/families">Families</Link>
           <Link className="pill" href="/resources">Resources</Link>
-          <Link className="pill" href="/treatment-fund">Treatment Fund</Link>
+          <Link className="pill" href="/fundraising">Treatment Fund</Link>
         </div>
 
         {/* Hamburger button */}
