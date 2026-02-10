@@ -43,7 +43,7 @@ export default function Nav() {
           <Link href="/meetings" onClick={() => setOpen(false)}>Meetings</Link>
           <Link href="/families" onClick={() => setOpen(false)}>Families</Link>
           <Link href="/resources" onClick={() => setOpen(false)}>Resources</Link>
-          <Link href="/treatment-fund" onClick={() => setOpen(false)}>
+          <Link href="/fundraising" onClick={() => setOpen(false)}>
             Treatment Fund
           </Link>
         </div>
