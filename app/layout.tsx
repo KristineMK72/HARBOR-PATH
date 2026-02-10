@@ -18,6 +18,7 @@ export default function RootLayout({
       <body>
         <Nav />
         {children}
+
         <footer className="footer">
           <div className="container">
             <p className="muted">
@@ -25,8 +26,20 @@ export default function RootLayout({
               immediate danger, call 911. If you’re thinking about self-harm,
               call or text 988 (U.S.).
             </p>
-            <p className="muted">
+
+            <p className="muted small" style={{ marginTop: 10 }}>
               © {new Date().getFullYear()} Harbor Path • One step at a time.
+            </p>
+
+            <p className="muted small" style={{ marginTop: 6 }}>
+              Built with care by{" "}
+              <a
+                href="https://spatialytics-next.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Spatialytics
+              </a>
             </p>
           </div>
         </footer>
