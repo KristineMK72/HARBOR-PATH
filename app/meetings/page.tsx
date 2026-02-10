@@ -36,7 +36,7 @@ export default function Meetings() {
           </ul>
         )}
         <p className="muted small" style={{ marginTop: 10 }}>
-          Tip: we can add more locations + meetings and refine accuracy as you gather them.
+          As the site evolves, more locations + meetings will be added..
         </p>
       </div>
     </Container>
